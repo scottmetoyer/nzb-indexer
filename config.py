@@ -6,5 +6,5 @@ config = {
     'usenet_username':      '',
     'usenet_password':      '',
     'database_server':      'localhost',
-    'database_port':        27017
+    'database_port':        27017,
 }
