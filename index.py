@@ -2,11 +2,15 @@
 # Scott Metoyer, 2013
 # Retrieves a list of new NZB's from the newsgroups specified in a config file
 from nntplib import *
-from config import config
 from pymongo import MongoClient
 import string
 import datetime
 import time
+
+try:
+    from config_local import config as config
+except ImportError:
+     from config_default import config as config
 
 mongo_connection = MongoClient('localhost', 27017)
 db = mongo_connection.nzb_database
