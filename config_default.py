@@ -7,4 +7,5 @@ config = {
     'usenet_password':      '',
     'database_server':      'localhost',
     'database_port':        27017,
+    'max_run_size':         1000000             # Max number of articles (not NZBs) to process in a single run.
 }
